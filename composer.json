@@ -1,0 +1,41 @@
+{
+    "name": "kaminskidaniell/laravel-qr-styling",
+    "version": "1.0.0",
+    "description": "A simple Laravel package to create nice looking qr codes",
+    "autoload": {
+        "psr-4": {
+            "Kaminskidaniell\\LaravelQrStyling\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel",
+            "email": "daniel.kaminski123@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0|^9.0|^10.0",
+        "endroid/qr-code": "^4.0",
+        "ext-imagick": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^6.0|^7.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kaminskidaniell\\LaravelQRStyling\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kaminskidaniell\\LaravelQRStyling\\QRCodeStylingServiceProvider"
+            ],
+            "aliases": {
+                "QRCode": "Kaminskidaniell\\LaravelQRStyling\\QRCodeStylingFacade"
+            }
+        }
+    }
+}
